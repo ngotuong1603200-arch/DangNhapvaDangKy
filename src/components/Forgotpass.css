@@ -1,0 +1,147 @@
+/* Reset cơ bản */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Bạn có thể đổi font chữ tùy project */
+}
+
+/* Căn giữa toàn bộ trang */
+.forgot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4; /* Màu nền ngoài viền trắng */
+}
+
+/* Khung chính chứa 2 cột */
+.forgot-card {
+  display: flex;
+  width: 800px;
+  height: 400px;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ======= CỘT TRÁI ======= */
+.left-panel {
+  width: 45%;
+  background-color: #df6967; /* Màu đỏ nhạt / hồng cam giống ảnh */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  border-right: 1px solid #ccc;
+}
+
+.promo-text {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.4;
+}
+
+/* CSS mô phỏng Logo KFT (Xóa nếu dùng ảnh thật) */
+.logo-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-circle {
+  width: 200px;
+  height: 200px;
+  background-color: #0b0b0b;
+  border-radius: 50%;
+  border: 4px solid #c99339; /* Viền vàng */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo-title {
+  color: #ba1e36;
+  font-size: 45px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-top: 60px; /* Dịch chữ xuống để chừa chỗ cho hình gà nếu có */
+}
+
+.logo-subtitle {
+  font-size: 10px;
+  color: #777;
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+/* ======= CỘT PHẢI ======= */
+.right-panel {
+  width: 55%;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.right-panel h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.input-group {
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #888;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Style cho nút "Tiếp Tục" */
+.continue-btn {
+  background-color: #2e75d6; /* Màu xanh dương */
+  color: #222; /* Chữ màu tối giống trong hình */
+  border: 1px solid #333;
+  padding: 8px 0;
+  font-size: 18px;
+  cursor: pointer;
+  width: 65%; /* Nút không chiếm hết chiều ngang */
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.continue-btn:hover {
+  background-color: #1a5bb0;
+  color: #fff;
+}
+
+/* Link quay lại */
+.back-link {
+  text-align: center;
+  display: block;
+  color: #333;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.back-link:hover {
+  color: #000;
+}
